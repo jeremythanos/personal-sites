@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11212D;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+}
+
+/* BARRA DE NAVEGACION */
+.nav {
+    width: 100%;
+    background-color: #2a4153;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__link {
+    color: #003;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.3s, font-size 0.3s, padding 0.3s, border 0.3s;
+}
+
+.nav__link:hover {
+    color: #FFFF00;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #FFFF00;
+}
+
+/* BOTON INICIAR SECCION */
+.link__button {
+    box-shadow: 3px 3px 3px 0 #000000;
+    background: linear-gradient(#213a57, #0b6477, #14919b);
+    padding: 18px 18px;
+    color: BLACK;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin-left: 400px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.link__button:hover {
+    background-color: #45dfb1;
+    color: #FFFF00;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px 0;
+} /*aqui termina la barra de navegacion*/ 
+
+/* MAIN CONTENT */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Tarjeta de Formulario */
+.card {
+    background-color: #163C6B;
+    padding: 20px;
+    margin-top: 52px ;
+    border-radius: 10px;
+    width: 430px; /* Aumentando el ancho del div */
+    box-shadow: 0 24px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card h2 {
+    background: linear-gradient(to right, #FFDB45, #FF0000);
+    font-size: 3em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: arial;
+    font-size: 18px;
+    text-align: left; /* Volver a alinear los labels a la izquierda */
+    padding-left: 20px; /* Opcional: agregar padding para que no queden pegados a la izquierda */
+}
+
+.card input {
+    width: 90%; /* Aumentando el ancho de los inputs */
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+/* Estilo para el placeholder */
+.card input::placeholder {
+    color: #ccccccb2; /* Color que desees para el placeholder */
+}
+
+
+.card input:hover {
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.3);
+}
+
+.google-button,.card button {
+    width: 94.2%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #0000ff;
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.1s ease, transform 0.1s ease;
+}
+
+.google-button,.card button:hover {
+    background: #430102;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.divider {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    letter-spacing: 10px;
+}
+
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: #2a4153;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item {
+    margin: 0 10px;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__icon {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.footer__link:hover {
+    color: #ffcc00;
+}

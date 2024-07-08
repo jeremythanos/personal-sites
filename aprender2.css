@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11212d;
+    background-size: cover;  /*CUERPO DE LA PAGINA*/
+    background-position: center;
+    font-family: 'EmiLinda', sans-serif;
+    font-weight: 100;
+    font-style: normal; 
+    letter-spacing: 5px;
+}
+
+/* SI QUIERO EDITAR EL COLOR Y TAMANO DE LA BARRA DE NAVEGACION */
+.nav {
+    width: 100%;
+    background-color: #2a4153;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.nav__list {  /* este es el UL de la barra de navegacion*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {  /* este es el LI de la barra de navegacion*/
+    margin: 0 15px;
+}
+
+.nav__link { /*este es el A  / link DE LA BARRA DE NAVEGACION */
+    color: #003;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.3s, font-size 0.3s, padding 0.3s, border 0.3s;
+}
+
+.nav__link:hover {
+    color: #FFFF00;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #FFFF00;
+} /*este es el A  / link DE LA BARRA DE NAVEGACION */
+
+/* SECCION DEL BOTON */
+.link__button { /* Botón de la barra de navegación para iniciar sesión o login */
+    box-shadow: 3px 3px 3px 0 #000000;
+    background: linear-gradient(#213a57, #0b6477, #14919b);
+    padding: 18px 18px;
+    margin-left: 400px;
+    color: BLACK;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.link__button:hover { /* Botón de la barra de navegación para iniciar sesión o login */
+    background-color: #45dfb1;
+    color: #FFFF00;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px 0;
+}
+/*AQUI TERMINA EL CONTENEDOR DE LA BARRA DE NAVEGACION*/
+
+
+/* Título */
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/*TITULO PRINCIPAL*/
+h1 {
+    background-image: url('IMAGENES/foto-idiomas-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #d4d4bf95;
+    text-align: left;
+    margin-top: 6rem;
+    margin-left: 0rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 8.5rem;
+    font-family: sans-serif;
+    background-size: 300% 300%;
+    animation: moveGradient 17.7s linear infinite;
+}
+
+
+
+/*AQUI EMPIEZA EL CONTENEDOR DE LAS TARJETAS*/
+/* Contenedor de las tarjetas */
+.card {
+    margin-top: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7rem; /* Ajustar según sea necesario */
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+}
+
+.card__caja {
+    margin-top: 180px;
+    color: #FFFF00;
+    font-family: Arial;
+    background: transparent;
+    width: calc(33.33% - 2rem);
+    height: 300px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    transition: all 0.5s ease;
+}
+
+/* Imagen de fondo y efecto hover */
+.caja--box1 {
+    background-image: url('IMAGENES/usa.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.caja--box1:hover {
+    width: calc(35% - 2rem);
+    height: 350px;
+    box-shadow: 0 0 25px #003;
+    transform: scale(1.05);
+    color: #FF0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.caja--box2 {
+    background-image: url('IMAGENES/ITALIA.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.caja--box2:hover {
+    width: calc(35% - 2rem);
+    height: 350px;
+    box-shadow: 0 0 25px #003;
+    transform: scale(1.05);
+    color: #FF0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.caja--box3 {
+    background-image: url('IMAGENES/TORRE-EIFEEL2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.caja--box3:hover {
+    width: calc(35% - 2rem);
+    height: 350px;
+    box-shadow: 0 0 25px #003;
+    transform: scale(1.05);
+    color: blue;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.caja--box4 {
+    background-image: url('IMAGENES/Catedral-de-Colonia-alemania-1024x768.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.caja--box4:hover {
+    width: calc(35% - 2rem);
+    height: 350px;
+    box-shadow: 0 0 25px #003;
+    transform: scale(1.05);
+    color: #FF0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.caja--box5 {
+    background-image: url('IMAGENES/Sagrada-familia-10-monumentos-mas-visitados-de-Espana-vocces.com_.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.caja--box5:hover {
+    width: calc(35% - 2rem);
+    height: 350px;
+    box-shadow: 0 0 25px #003;
+    transform: scale(1.05);
+    color: #FF0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.caja--box6 {
+    background-image: url('IMAGENES/PORTUGAL.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.caja--box6:hover {
+    width: calc(35% - 2rem);
+    height: 350px;
+    box-shadow: 0 0 25px #003;
+    transform: scale(1.05);
+    color: #FF0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*AQUI ESTABLECI EL DIV QUE DARA LA DESCRIPCION DE LAS TARJETAS CUANDO HACEMOS HOVER*/
+.description {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 96.8%; /* Ajustado para que ocupe todo el ancho de la caja */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustado el color de fondo con mayor transparencia */
+    color: #FFCC00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding: 10px;
+    text-align: center;
+}
+
+.card__caja:hover .description {
+    display: block;
+}
+
+/*FOOTER*/
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #2a4153;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item {
+    margin: 0 10px;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__icon {
+    width: 30px;
+    height: auto;
+}
+
+.footer__link:hover {
+    color: #ffcc00;
+}
+
+
+
+
+
+
+/*tipografia de las letras*/
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-thin-italic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-extralight-italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-light-italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-regular-italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-medium-italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-semibold-italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-bold-italic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-extrabold-italic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EmiLinda';
+    src: url('../fonts/emi-linda-black-italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+

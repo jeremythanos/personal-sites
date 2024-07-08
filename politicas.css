@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11212d; /* EL BODY, SI QUIERO CAMBIAR FONDO*/
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+}
+
+/* SI QUIERO EDITAR EL COLOR Y TAMANO DE LA BARRA DE NAVEGACION */
+.nav {
+    width: 100%;
+    background-color: #2a4153;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.nav__list {  /* este es el UL de la barra de navegacion*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {  /* este es el LI de la barra de navegacion*/
+    margin: 0 15px;
+}
+
+.nav__link { /*este es el A  / link DE LA BARRA DE NAVEGACION */
+    color: #003;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.3s, font-size 0.3s, padding 0.3s, border 0.3s;
+}
+
+.nav__link:hover {
+    color: #FFFF00;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #FFFF00;
+} /*este es el A  / link DE LA BARRA DE NAVEGACION */
+
+/* SECCION DEL BOTON */
+.link__button { /* Botón de la barra de navegación para iniciar sesión o login */
+    box-shadow: 3px 3px 3px 0 #000000;
+    background: linear-gradient(#213a57, #0b6477, #14919b);
+    padding: 18px 18px;
+    margin-left: 400px;
+    color: BLACK;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.link__button:hover { /* Botón de la barra de navegación para iniciar sesión o login */
+    background-color: #45dfb1;
+    color: #FFFF00;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px 0;
+}
+/*AQUI TERMINA EL CONTENEDOR DE LA BARRA DE NAVEGACION*/
+
+
+.contenido {
+    margin-top: 150px; /* Espacio para la barra de navegación */
+    text-align: center;
+    color: #fff;
+}
+
+.contenido h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Menu de Politicas */
+.menu-politicas {
+    margin: 20px auto;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__item {
+    margin: 0 10px;
+}
+
+.menu__link {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu__link:hover {
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    background-color: #2a4153;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item {
+    margin: 0 10px;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__icon {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.footer__link:hover {
+    color: #ffcc00;
+}

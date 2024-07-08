@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11212d; /* EL BODY, SI QUIERO CAMBIAR FONDO*/
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+}
+
+/* SI QUIERO EDITAR EL COLOR Y TAMANO DE LA BARRA DE NAVEGACION */
+.nav {
+    width: 100%;
+    background-color: #2a4153;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+
+.nav__list {  /* este es el UL de la barra de navegacion*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {  /* este es el LI de la barra de navegacion*/
+    margin: 0 15px;
+}
+
+.nav__link { /*este es el A  / link DE LA BARRA DE NAVEGACION */
+    color: #003;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.3s, font-size 0.3s, padding 0.3s, border 0.3s;
+}
+
+.nav__link:hover {
+    color: #FFFF00;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #FFFF00;
+}/*este es el A  / link DE LA BARRA DE NAVEGACION */
+
+
+/* SECCION DEL BOTON*/
+
+.link__button { /* Botón de la barra de navegación para iniciar sesión o login */
+    box-shadow: 3px 3px 3px 0 #000000;
+    background: linear-gradient(#213a57, #0b6477, #14919b);
+    padding: 18px 18px;
+    color: BLACK;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin-left: 400px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.link__button:hover { /* Botón de la barra de navegación para iniciar sesión o login */
+    background-color: #45dfb1;
+    color: #FFFF00;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px 0;
+}
+
+
+/*AQUI TERMINA LA SECCION DEL BOTON*/
+
+/*aqui termino de crear la barra de navegacion*/
+
+.contenido {
+    margin-top: 100px; /* Espacio para la barra de navegación */
+    text-align: center;
+    color: #fff;
+}
+
+.contenido h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2,h3,h3,h4,h5,h6 {
+    font-size: 24px;
+    margin-top: 40px;
+    color: #ffcc00;
+}
+
+h1{
+    background:linear-gradient(to right,#00e1fd,#fc007a);
+    -webkit-background-clip: text; /* Aplica el gradiente como color de texto en navegadores webkit (Safari, Chrome, etc.) */
+    background-clip: text; /* Aplica el gradiente como color de texto en otros navegadores */
+    color: transparent;
+    font-size: 9rem;
+}
+
+span{
+    background:linear-gradient(#FFE53B,#FF2525);
+    -webkit-background-clip: text; /* Aplica el gradiente como color de texto en navegadores webkit (Safari, Chrome, etc.) */
+    background-clip: text; /* Aplica el gradiente como color de texto en otros navegadores */
+    color: transparent;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: justify;
+}
+
+
+.header-with-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header-with-logo .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.contenido h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.contenido p {
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+}
+/*FOOTER*/
+
+.main-content {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: #2a4153;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item {
+    margin: 0 10px;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__icon {
+    width: 30px;
+    height: auto;
+}
+
+.footer__link:hover {
+    color: #ffcc00;
+}

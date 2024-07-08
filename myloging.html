@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Fondos/SOMBRAS/atom.png" type="image/png">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="myloging.css">
+</head>
+<body>
+    <!--AQUI COMIENZA LA BARRA DE NAVEGACION-->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="inicio.html" class="nav__link">INICIO</a></li>
+            <li class="nav__item"><a href="aprender.html" class="nav__link">APRENDER UN IDIOMA</a></li>
+            <li class="nav__item"><a href="sobrenosotros.html" class="nav__link">SOBRE NOSOTROS</a></li>
+            <li class="nav__item"><a href="politicas.html" class="nav__link">POLITICAS DE PRIVACIDAD</a></li>
+            <li class="nav__item"><a href="myloging.html" class="link__button">INICIAR SESION</a></li>
+        </ul>
+    </nav> <!--AQUI TERMINA LA BARRA DE NAVEGACION-->
+
+    <div class="main-content">
+        <!-- Formulario Iniciar Sesión -->
+        <div class="card" id="iniciar-sesion">
+            <h2>Iniciar Sesión</h2>
+            <form>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required placeholder="Nombre Completo">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Email">
+
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required placeholder="Usuario">
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required placeholder="Contraseña">
+
+                <button class="crear" type="submit">Crear Cuenta</button>
+            </form>
+            <div class="divider">O</div>
+            <button class="google-button">Registrarse con Google</button>
+        </div>
+
+        <!-- Formulario Crear Cuenta -->
+        <div class="card" id="crear-cuenta" style="display:none;">
+            <h2>Crear Cuenta</h2>
+            <form>
+                <label for="new-name">Nombre</label>
+                <input type="text" id="new-name" name="new-name" required placeholder="Nombre Completo">
+
+                <label for="new-email">Email</label>
+                <input type="email" id="new-email" name="new-email" required placeholder="Email">
+
+                <label for="new-username">Usuario</label>
+                <input type="text" id="new-username" name="new-username" required placeholder="Usuario">
+
+                <label for="new-password">Contraseña</label>
+                <input type="password" id="new-password" name="new-password" required placeholder="Contraseña">
+
+                <button class="crear" type="submit">Registrar</button>
+            </form>
+            <div class="divider">O</div>
+            <button class="google-button">Registrarse con Google</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="https://www.instagram.com" class="footer__link" target="_blank">
+                        <img src="IMAGENES/instagram-icon.png" alt="Instagram" class="footer__icon">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="mailto:contacto@gmail.com" class="footer__link">
+                        <img src="IMAGENES/gmail-icon.png" alt="Gmail" class="footer__icon">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://www.facebook.com" class="footer__link" target="_blank">
+                        <img src="IMAGENES/facebook-icon.png" alt="Facebook" class="footer__icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
